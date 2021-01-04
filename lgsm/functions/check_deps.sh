@@ -416,8 +416,8 @@ fn_deps_build_debian(){
 	# Hurtword/Rust
 	elif [ "${shortname}" == "hw" ]||[ "${shortname}" == "rust" ]; then
 		array_deps_required+=( lib32z1 )
-	# Minecraft, Rising World, Wurm
-	elif [ "${shortname}" == "mc" ]||[ "${shortname}" == "rw" ]; then
+	# Minecraft, Rising World, Mindustry
+	elif [ "${shortname}" == "mc" ]||[ "${shortname}" == "rw" ]||[ "${shotname}" == "mind" ]; then
 		javaversion=$(java -version 2>&1 | grep "version")
 		if [ "${javaversion}" ]; then
 			# Added for users using Oracle JRE to bypass the check.
